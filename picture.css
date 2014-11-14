@@ -1,0 +1,19 @@
+html {
+	background-color:black;
+	background-image:url(images/background2.jpg);
+	background-position:top center;
+}
+
+
+
+#pictureframe {
+	width:960px;
+	margin:auto;
+	border:5px solid white;
+	margin-top:20px;
+}
+
+#pictureframe img {
+	max-width:100%;
+}
+

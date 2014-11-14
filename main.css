@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------------------------END REST------------------------------------------*/
+
+/** {
+	outline: solid white 1px;
+}*/
+
+
+/*stops users from dragging and copying images*/
+/*img {
+  pointer-events: none;
+}*/
+
+
+html {
+	background-color:black;
+	background-image:url(images/background2.jpg);
+	background-position:top center;
+}
+
+#facebook {
+	text-align:center;
+	padding-top:1.2em;
+}
+
+#facebook img {
+	width:50px;
+	cursor:pointer;
+}
+
+#logo {
+	width:600px;
+	padding:25px 0px 20px 0px;
+	margin:auto;
+}
+#logo img {
+	max-width:100%;
+}
+
+#logoSmall {
+	width:99%;
+	text-align:center;
+	display:none;
+}
+
+#logoSmall img {
+	margin-bottom:1em;
+	margin-top:1em;
+}
+
+#navbar {
+	width:500px;
+	font-size:1em;
+	font-family: Papyrus, fantasy;
+	color:#cdd0d7;
+	text-shadow: 0 0 .7em white;
+	margin: auto;
+	text-align:center;
+}
+
+#navbar a:link {
+	font-family: Papyrus, fantasy;
+	color:#cdd0d7;
+	text-shadow: 0 0 .7em white;
+	text-transform:capitalize;
+	text-decoration:none;
+}
+
+#navbar a:visited {
+	color:#cdd0d7;
+}
+
+#navbar a:hover {
+	color:#af70ff;
+}
+
+#xout {
+	position:absolute;
+	top:.3em;
+	right:.3em;
+	width:25px;
+	height:25px;
+	border-radius:.2em;
+	background-image: url(images/x-out.png);
+}
+#xout:hover {
+	background-position: -25px 0px;
+	cursor:pointer;
+}
+
+
+#xout:active {
+	background-position: -25px 0px;
+}
+
+
+#navbar li {
+	background-color:black;
+	margin-right:7px;
+	margin-left:7px;
+	padding:2px 5px 2px 5px;
+	display:inline;
+	border: 2px solid #8e8f8b;
+	border-radius:5px;
+	text-align:center;
+	line-height:100%;
+}
+
+#navbar2 {
+	display:none;
+}
+
+#menuIcon {
+	font-size:1em;
+	font-family: Papyrus, fantasy;
+	color:#cdd0d7;
+	text-shadow: 0 0 .7em white;
+	text-align:center;
+	display:none;
+}
+
+#menuIcon p {
+	padding:.3em;
+}
+
+
+#menuIcon img {
+	width:20px;
+	border:1px solid #cdd0d7;
+}
+
+#menuIcon img:hover {
+	border:1px solid #af70ff;
+	cursor:pointer;
+}
+
+#menuIcon img:active {
+	border:1px solid black;
+}
+
+#image {
+	width:650px;
+	padding-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+	position:relative;
+}
+
+#image img {
+	position:absolute;
+	display:block;
+	top:0px;
+	max-width:100%;
+	height:auto;
+	border:3px solid white;
+	border-radius:10px;
+}
+
+#image li {
+	display:none;
+}
+
+.bold {
+	font-weight:bold;
+	font-family: Papyrus, fantasy;
+}
+
+#contact {
+	margin-top:1.2em;
+	text-align:center;
+}
+
+#contact p {
+	color:white;
+	display:inline-block;
+	font-size:1.2em;
+	background-color: black;
+	border:1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+#contactimg {
+	text-align:center;
+	margin-top:60px;
+	text-align:center;
+}
+
+#contactimg img {
+	border: 1px solid white;
+	border-radius:20px;
+	width:400px;
+}
+
+#clickedPicture{
+	position:absolute;
+	width:99%;
+	top:0px;
+	left:0px;
+	min-height:100%;
+	background-color:rgba(0, 0, 0, 0.7);
+	display:none;
+	text-align: center;
+}
+
+#clickedPicture img {
+	border: 2px solid white;
+	width:60%;
+	display:inline-block;
+	margin-top:2em;
+}
+
+#pictureContainer img:hover {
+	cursor:pointer;
+}
+
+#arrowLeft {
+	position:fixed;
+	left:60px;
+	top:45%;
+	height:40px;
+	width:25px;
+	border:1px solid grey;
+	border-radius:3px;
+	background-image:url(images/rightarrow.jpg);
+}
+
+#arrowLeft:hover{
+	background-position:-25px 0px;
+	cursor:pointer;
+	border:2px solid white;
+}
+
+#arrowLeft:active {
+	border:2px solid grey;
+}
+
+#arrowRight {
+	position:fixed;
+	top:45%;
+	height:40px;
+	width:25px;
+	border:1px solid grey;
+	border-radius:3px;
+	background-image:url(images/rightarrow.jpg);
+	background-position:-75px 0px;
+}
+
+#arrowRight:hover {
+	background-position: -50px 0px;
+	cursor:pointer;
+	border:2px solid white;
+}
+
+#arrowRight:active {
+	border:2px solid grey;
+}
+
+/******************************
+	Media Queries
+*******************************/
+
+@media (max-width: 768px) {
+
+	#image {
+		width:84%;
+		min-width:200px;
+	}
+
+	#arrowLeft {
+		display:none;
+	}
+
+	#arrowRight {
+		display:none;
+	}
+
+	#clickedPicture img {
+		width:99%;
+		margin-top:0;
+	}
+
+} /*end media*/
+
+@media (max-width: 550px) {
+
+	#logo {
+		width:95%;
+		min-width:250px;
+	}
+
+	#navbar {
+		width:95%;
+	}
+
+	#contact p {
+		font-size:1em;
+	}
+
+	#contactimg {
+		display:block;
+		text-align:center;
+	}
+
+	#contactimg img {
+		width:95%;
+	}
+
+}
+
+@media (max-width:380px) {
+	#menuIcon{
+		display:block;
+	}
+	#logo {
+		padding-bottom:1em;
+		display:none;
+	}
+	#logoSmall {
+		display:block;
+	}
+	#image {
+		margin-top:1em;
+	}
+	#navbar {
+		display:none;
+	}
+	#navbar ul {
+		display:inline-block;
+	}
+
+	#navbar li {
+		margin:0;
+		display:block;
+		width:10em;
+		padding:.4em;
+	}
+
+	#navbar2 {
+		display:block;
+		width:80%;
+		margin-left:auto;
+		margin-right:auto;
+		text-align: center;
+	}
+
+	#navbar2 select {
+		width:40%;
+		font-size:.8em;
+		font-family: Papyrus, fantasy;
+		color:#cdd0d7;
+		background:black;
+		text-shadow: 0 0 .7em white;
+		box-shadow: 0 0 .4em white;
+	}
+	
+	#navbar2 select:hover {
+		color:#af70ff;
+		cursor:pointer;
+	}
+
+
+	#navbar2 option {
+		font-size:.8em;
+		font-family: Papyrus, fantasy;
+		color:#cdd0d7;
+		background:black;
+		text-shadow: 0 0 .7em white;
+	}
+
+	#navbar2 option:hover {
+		color:#af70ff;
+	}
+}
+
+
+
+
+
+
+
+

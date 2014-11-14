@@ -1,0 +1,16 @@
+-----1.) Reformat navigation with javascript
+	- Show current page highlighted
+2.) Create AJAX for pictures
+-----3.) Create popup for pictures with Javascript
+4.) Change title logo
+5.) Change CSS to format with screen size devices
+-----6.) Add rotating picture to homepage
+7.) Make a page generator with 20 images per page.
+8.) After exiting popup image jump to previous image location.
+9.) -------Make gallery page into a list. 
+10.) On popup in gallery...allow scrolling to next picture with arrows.
+
+11.) create a grid layout
+12.) add media query software to make writing easier
+
+
