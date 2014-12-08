@@ -126,19 +126,19 @@ html {
 	position:absolute;
 	top:.3em;
 	right:.3em;
-	width:25px;
-	height:25px;
+	width:30px;
+	height:30px;
 	border-radius:.2em;
 	background-image: url(images/x-out.png);
 }
 #xout:hover {
-	background-position: -25px 0px;
+	background-position: -30px 0px;
 	cursor:pointer;
 }
 
 
 #xout:active {
-	background-position: -25px 0px;
+	background-position: -30px 0px;
 }
 
 
@@ -173,7 +173,7 @@ html {
 
 
 #menuIcon img {
-	width:20px;
+	width:1.6em;
 	border:1px solid #cdd0d7;
 }
 
@@ -242,11 +242,12 @@ html {
 }
 
 #clickedPicture{
-	position:absolute;
-	width:99%;
+	position:fixed;
+	width:100%;
+	height:100%;
+	overflow:scroll;
 	top:0px;
 	left:0px;
-	min-height:100%;
 	background-color:rgba(0, 0, 0, 0.7);
 	display:none;
 	text-align: center;

@@ -31,11 +31,11 @@ $(document).ready(function() {
 			$('#image ul li:nth-child(' + i + ')').fadeIn(fadeInTime);
 				i++;
 		}
-	}
+	};
 
 	$('#image ul li:nth-child(' + imageLength + ')').show();
 
-	setInterval(function(event){
+	setInterval(function(){
 		showPic();
 		} 
 	,pictureTime);

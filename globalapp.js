@@ -1,14 +1,9 @@
-$(document).bind("mobileinit", function() {
-  		$.mobile.ajaxEnabled = false;
-	});
-	
-
 $(document).ready(function() {
 
 	//create a pop up for pictures in gallery
 	var xout = $("<div id='xout'></div>");
 	var clickedPictureDiv = $("<div id = 'clickedPicture'></div>");
-	var clickedImageHolderDiv = $("<div id='clickedImageHolder'></div>")
+	var clickedImageHolderDiv = $("<div id='clickedImageHolder'></div>");
 	var clickedPicImg = $("<img onContextMenu='return false;'>");
 	var arrowLeftDiv = $("<div id='arrowLeft'></div>");
 	var arrowRightDiv = $("<div id='arrowRight'></div>");
@@ -21,7 +16,7 @@ $(document).ready(function() {
 	clickedPictureDiv.append(arrowRightDiv);
 
 
-	$('#pictureContainer').on('click','img',function(event) {
+	$('#pictureContainer').on('click','img',function() {
 		$('#pictureContainer').hide();
 		//create div for clickedPicture
 		var imgSrc = $(this).attr('src');
@@ -58,10 +53,10 @@ $(document).ready(function() {
 				picNumber = $(this).parent().index();
 			}
 		});
-
+		var pictureSrc;
 		if(picNumber > 0 || picNumber < listLength - 1) {
 			picNumber = picNumber - 1;
-			var pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',pictureSrc);
 		} else if (picNumber == 0) {
 			picNumber = listLength;
@@ -82,10 +77,10 @@ $(document).ready(function() {
 				picNumber = $(this).parent().index();
 			}
 		});
-
+		var pictureSrc;
 		if(picNumber > 0 || picNumber < listLength - 1) {
 			picNumber = picNumber - 1;
-			var pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',pictureSrc);
 		} else if (picNumber == 0) {
 			picNumber = listLength;
@@ -105,10 +100,10 @@ $(document).ready(function() {
 				picNumber = $(this).parent().index();
 			}
 		});
-
+		var pictureSrc;
 		if(picNumber < listLength) {
 			picNumber = picNumber + 1;
-			var pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',pictureSrc);
 		} else {
 			picNumber = 0;
@@ -130,10 +125,10 @@ $(document).ready(function() {
 				picNumber = $(this).parent().index();
 			}
 		});
-
+		var pictureSrc;
 		if(picNumber > 0 || picNumber < listLength - 1) {
 			picNumber = picNumber - 1;
-			var pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',pictureSrc);
 		} else if (picNumber == 0) {
 			picNumber = listLength;
@@ -143,14 +138,14 @@ $(document).ready(function() {
 	});
 
 	//hides the popup gallery picture
-	clickedPictureDiv.on('vclick', function(){
+	clickedPictureDiv.on('click', function(){
 		console.log('hello');
 		$(this).hide();
 		$('#pictureContainer').show();
 	});
 
 	//hide menu paragraph when menu is clicked for small media.  Also shows navbar.
-	$('#menuIcon img').on('vclick',function(){
+	$('#menuIcon img').on('click',function(){
 		console.log('hello');
 		$('#navbar').slideToggle();
 		$('#menuIcon p').toggle();
