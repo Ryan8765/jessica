@@ -139,16 +139,25 @@ $(document).ready(function() {
 
 	//hides the popup gallery picture
 	clickedPictureDiv.on('click', function(){
-		console.log('hello');
 		$(this).hide();
 		$('#pictureContainer').show();
 	});
 
 	//hide menu paragraph when menu is clicked for small media.  Also shows navbar.
 	$('#menuIcon img').on('click',function(){
-		console.log('hello');
 		$('#navbar').slideToggle();
 		$('#menuIcon p').toggle();
+	});
+
+	//make sure navbar is showing if window is resized after it has been hidden
+	$(window).resize(function(){
+		var x = window.innerWidth;
+		if (x > 380) {
+			$('#navbar').show();
+		} else if (x < 380) {
+			$('#navbar').hide();
+			$('#menuIcon p').show();
+		}
 	});
 
 }); //end doc ready
