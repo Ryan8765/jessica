@@ -138,7 +138,7 @@ $(document).ready(function() {
 	});
 
 	//hides the popup gallery picture
-	clickedPictureDiv.on('click', function(){
+	clickedPictureDiv.on('click touchstart', function(){
 		$(this).hide();
 		$('#pictureContainer').show();
 	});
