@@ -143,6 +143,11 @@ $(document).ready(function() {
 		$('#pictureContainer').show();
 	});
 
+	xout.on('click touchstart', function(){
+		clickedPictureDiv.hide();
+		$('#pictureContainer').show();
+	});
+
 	//hide menu paragraph when menu is clicked for small media.  Also shows navbar.
 	$('#menuIcon img').on('click',function(){
 		$('#navbar').slideToggle();
