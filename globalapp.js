@@ -117,14 +117,4 @@ $(document).ready(function() {
 		}
 	});
 
-	//gallery arrows to show up and disappear on mobile devices on image touch
-	clickedPicImg.on('click',function(){
-		var x = window.innerWidth;
-		if (x <= 768) {
-			console.log('inside if');
-			$('#arrowLeft').toggle();
-			$('#arrowRight').toggle();
-		}
-	});
-
 }); //end doc ready

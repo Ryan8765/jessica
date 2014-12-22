@@ -319,13 +319,11 @@ html {
 	}
 
 	#arrowLeft {
-		display:none;
 		margin-top:0;
 		margin-left:80px;
 	}
 
 	#arrowRight {
-		display:none;
 		margin-top:0;
 		margin-right:80px;
 	}
