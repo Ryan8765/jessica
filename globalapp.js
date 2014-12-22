@@ -10,10 +10,11 @@ $(document).ready(function() {
 	var picNumber;
 
 	clickedPictureDiv.append(xout);
-	clickedPictureDiv.append(arrowLeftDiv);
+	clickedImageHolderDiv.append(arrowLeftDiv);
+	clickedImageHolderDiv.append(arrowRightDiv);
 	clickedImageHolderDiv.append(clickedPicImg);
 	clickedPictureDiv.append(clickedImageHolderDiv);
-	clickedPictureDiv.append(arrowRightDiv);
+	
 
 
 	$('#pictureContainer').on('click','img',function() {
@@ -24,20 +25,17 @@ $(document).ready(function() {
 		$('body').append(clickedPictureDiv);
 		$('#clickedPicture').show();
 		$('html,body').scrollTop(0);
-		var imageWidth = clickedPicImg.width();
-		var leftArrowOffset = arrowLeftDiv.offset().left;
-		var rightarrowOffset = ((clickedPicImg.offset().left)*2) + imageWidth - leftArrowOffset;
-		arrowRightDiv.css('left',rightarrowOffset + 'px');
 
+		var x = window.innerWidth;
+		if (x > 768) {
+			var imageWidth = clickedPicImg.width();
+			var leftArrowOffset = arrowLeftDiv.offset().left;
+			var rightarrowOffset = ((clickedPicImg.offset().left)*2) + imageWidth - leftArrowOffset;
+			arrowRightDiv.css('left',rightarrowOffset + 'px');
+		}	
 
 	});
-	//realign image arrows when window is resized
-	$(window).resize(function(){
-		var imageWidth = clickedPicImg.width();
-		var leftArrowOffset = arrowLeftDiv.offset().left;
-		var rightarrowOffset = ((clickedPicImg.offset().left)*2) + imageWidth - leftArrowOffset;
-		arrowRightDiv.css('left',rightarrowOffset + 'px');
-	});
+
 	//stop image propagation so that when you click the big image popup it doesn't trigger the click event to go back to the gallery
 	clickedPicImg.click(function(event){
 		event.stopPropagation();
@@ -96,6 +94,7 @@ $(document).ready(function() {
 		$('#pictureContainer').show();
 	});
 
+	//touchstart added for IOS safari 'click' bug.  
 	xout.on('click touchstart', function(){
 		clickedPictureDiv.hide();
 		$('#pictureContainer').show();
@@ -115,6 +114,16 @@ $(document).ready(function() {
 		} else if (x < 380) {
 			$('#navbar').hide();
 			$('#menuIcon p').show();
+		}
+	});
+
+	//gallery arrows to show up and disappear on mobile devices on image touch
+	clickedPicImg.on('click',function(){
+		var x = window.innerWidth;
+		if (x <= 768) {
+			console.log('inside if');
+			$('#arrowLeft').toggle();
+			$('#arrowRight').toggle();
 		}
 	});
 
