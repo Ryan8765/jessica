@@ -131,15 +131,6 @@ html {
 	border-radius:.2em;
 	background-image: url(images/x-out.png);
 }
-#xout:hover {
-	background-position: -30px 0px;
-	cursor:pointer;
-}
-
-
-#xout:active {
-	background-position: -30px 0px;
-}
 
 
 #navbar li {
@@ -275,15 +266,9 @@ html {
 	background-image:url(images/rightarrow.jpg);
 }
 
-#arrowLeft:hover{
-	background-position:-25px 0px;
-	cursor:pointer;
-	border:2px solid white;
-}
 
-#arrowLeft:active {
-	border:2px solid grey;
-}
+
+
 
 #arrowRight {
 	float: right;
@@ -297,19 +282,45 @@ html {
 	background-position:-75px 0px;
 }
 
-#arrowRight:hover {
-	background-position: -50px 0px;
-	cursor:pointer;
-	border:2px solid white;
-}
 
-#arrowRight:active {
-	border:2px solid grey;
-}
 
 /******************************
 	Media Queries
 *******************************/
+
+	/* Contain hover states for large devices because of iPhone hover state bug */
+@media (min-width: 769px) {
+	#arrowLeft:hover {
+		background-position:-25px 0px;
+		cursor:pointer;
+		border:2px solid white;
+	}
+
+	#arrowLeft:active {
+		border:2px solid grey;
+	}
+	
+	#arrowRight:hover {
+		background-position: -50px 0px;
+		cursor:pointer;
+		border:2px solid white;
+	}
+
+	#arrowRight:active {
+		border:2px solid grey;
+	}
+
+	#xout:hover {
+		background-position: -30px 0px;
+		cursor:pointer;
+	}
+
+	#xout:active {
+		background-position: -30px 0px;
+	}
+
+}
+
 
 @media (max-width: 768px) {
 
