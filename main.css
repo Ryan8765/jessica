@@ -310,6 +310,10 @@ html {
 		border:2px solid grey;
 	}
 
+	#xout {
+		display:none;
+	}
+
 	#xout:hover {
 		background-position: -30px 0px;
 		cursor:pointer;
