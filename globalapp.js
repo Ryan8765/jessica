@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var xout = $("<div id='xout'></div>");
 	var clickedPictureDiv = $("<div id = 'clickedPicture'></div>");
 	var clickedImageHolderDiv = $("<div id='clickedImageHolder'></div>");
-	var clickedPicImg = $("<img onContextMenu='return false;'>");
+	var clickedPicImg = $("<img class = 'imagePopup' onContextMenu='return false;'>");
 	var arrowLeftDiv = $("<div id='arrowLeft'></div>");
 	var arrowRightDiv = $("<div id='arrowRight'></div>");
 	var picNumber;
@@ -15,15 +15,42 @@ $(document).ready(function() {
 	clickedImageHolderDiv.append(clickedPicImg);
 	clickedPictureDiv.append(clickedImageHolderDiv);
 	
+	//function to resize the images to 
+	var imgResize = function() {
+		var img = $('#clickedImageHolder img');
+		var w = img.width();
+		var h = img.height();
+		//if height is bigger than width scale to fit window height only if window size is greater than 768
+		if (window.innerWidth > 768) {
+			//reset class
+				img.removeClass();
+			//if picture height is greater than width display w/ portraitImage class
+			if (h > w) {
+				img.addClass('portraitImage');
+			} else {
+				img.addClass('imagePopup');
+			}
+		}
+	};
+
+	//function to splice "thumbnail" out of image source to show High Def picture
+	var thumbnailSplice = function(string) {
+		var newSource = string.replace("Thumbnails/", "");
+		return newSource;
+	};
+
 
 
 	$('#pictureContainer').on('click','img',function() {
 		$('#pictureContainer').hide();
 		//create div for clickedPicture
 		var imgSrc = $(this).attr('src');
+		imgSrc = thumbnailSplice(imgSrc);
 		clickedPicImg.attr('src', imgSrc);
 		$('body').append(clickedPictureDiv);
+		clickedPicImg.hide();
 		$('#clickedPicture').show();
+		clickedPicImg.show();
 		$('html,body').scrollTop(0);
 
 		var x = window.innerWidth;
@@ -32,8 +59,7 @@ $(document).ready(function() {
 			var leftArrowOffset = arrowLeftDiv.offset().left;
 			var rightarrowOffset = ((clickedPicImg.offset().left)*2) + imageWidth - leftArrowOffset;
 			arrowRightDiv.css('left',rightarrowOffset + 'px');
-		}	
-
+		}
 	});
 
 	//stop image propagation so that when you click the big image popup it doesn't trigger the click event to go back to the gallery
@@ -44,10 +70,13 @@ $(document).ready(function() {
 	arrowLeftDiv.on('click', function(event){
 		event.stopPropagation();
 		var popupImg = clickedPicImg.attr('src');
+		popupImg = thumbnailSplice(popupImg);
 		//find index position of li with popup picture src to know which picture to pop up next.
 		var listLength = ($('#pictureContainer li').length)-1;
 		$('#pictureContainer li img').each(function(){
-			if($(this).attr('src') == popupImg) {
+			var thisSource = $(this).attr('src');
+			thisSource = thumbnailSplice(thisSource);
+			if(thisSource == popupImg) {
 				picNumber = $(this).parent().index();
 			}
 		});
@@ -55,12 +84,11 @@ $(document).ready(function() {
 		if(picNumber > 0 || picNumber < listLength - 1) {
 			picNumber = picNumber - 1;
 			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
-			$('#clickedPicture img').attr('src',pictureSrc);
+			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		} else if (picNumber == 0) {
 			picNumber = listLength;
-			$('#clickedPicture img').attr('src',pictureSrc);
-		}
-		
+			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
+		}		
 	});
 
 	
@@ -68,10 +96,14 @@ $(document).ready(function() {
 	arrowRightDiv.on('click', function(event){
 		event.stopPropagation();
 		var popupImg = clickedPicImg.attr('src');
+		popupImg = thumbnailSplice(popupImg);
 		//find index position of li with popup picture src to know which picture to pop up next.
 		var listLength = ($('#pictureContainer li').length)-1;
+		//get current index of img showing
 		$('#pictureContainer li img').each(function(){
-			if($(this).attr('src') == popupImg) {
+			var thisSource = $(this).attr('src');
+			thisSource = thumbnailSplice(thisSource);
+			if(thisSource == popupImg) {
 				picNumber = $(this).parent().index();
 			}
 		});
@@ -79,13 +111,12 @@ $(document).ready(function() {
 		if(picNumber < listLength) {
 			picNumber = picNumber + 1;
 			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
-			$('#clickedPicture img').attr('src',pictureSrc);
+			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		} else {
 			picNumber = 0;
 			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
-			$('#clickedPicture img').attr('src',pictureSrc);
+			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		}
-
 	});
 
 	//hides the popup gallery picture
@@ -106,7 +137,7 @@ $(document).ready(function() {
 		$('#menuIcon p').toggle();
 	});
 
-	//make sure navbar is showing if window is resized after it has been hidden
+	//make sure navbar is showing if window is resized after it has been hidden and also make sure portrait image is displayed correctly.
 	$(window).resize(function(){
 		var x = window.innerWidth;
 		if (x > 380) {

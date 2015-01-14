@@ -244,9 +244,17 @@ html {
 	text-align: center;
 }
 
-#clickedPicture img {
+.imagePopup {
 	border: 2px solid white;
 	width:60%;
+	display:inline-block;
+	margin-top:2em;
+}
+
+.portraitImage {
+	border: 2px solid white;
+	height: 100vh;
+	width:auto;
 	display:inline-block;
 	margin-top:2em;
 }
@@ -258,7 +266,7 @@ html {
 #arrowLeft {
 	float:left;
 	margin-left:100px;
-	margin-top:35%;
+	margin-top:0px;
 	height:40px;
 	width:25px;
 	border:1px solid grey;
@@ -273,7 +281,7 @@ html {
 #arrowRight {
 	float: right;
 	margin-right:100px;
-	margin-top:35%;
+	margin-top:0px;
 	height:40px;
 	width:25px;
 	border:1px solid grey;
@@ -290,24 +298,28 @@ html {
 
 	/* Contain hover states for large devices because of iPhone hover state bug */
 @media (min-width: 769px) {
+	.imagePopup {
+		height:100vh;
+		width:auto;
+	}
 	#arrowLeft:hover {
 		background-position:-25px 0px;
 		cursor:pointer;
-		border:2px solid white;
+		border-color:white;
 	}
 
 	#arrowLeft:active {
-		border:2px solid grey;
+		border-color: grey;
 	}
 	
 	#arrowRight:hover {
 		background-position: -50px 0px;
 		cursor:pointer;
-		border:2px solid white;
+		border-color:white;
 	}
 
 	#arrowRight:active {
-		border:2px solid grey;
+		border-color: grey;
 	}
 
 	#xout {
