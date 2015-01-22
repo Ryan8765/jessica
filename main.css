@@ -245,7 +245,7 @@ html {
 }
 
 .imagePopup {
-	border: 2px solid white;
+	border: 1px solid white;
 	width:60%;
 	display:inline-block;
 	margin-top:2em;
