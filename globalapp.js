@@ -54,12 +54,6 @@ $(document).ready(function() {
 		$('html,body').scrollTop(0);
 
 		var x = window.innerWidth;
-		if (x > 768) {
-			var imageWidth = clickedPicImg.width();
-			var leftArrowOffset = arrowLeftDiv.offset().left;
-			var rightarrowOffset = ((clickedPicImg.offset().left)*2) + imageWidth - leftArrowOffset;
-			arrowRightDiv.css('left',rightarrowOffset + 'px');
-		}
 	});
 
 	//stop image propagation so that when you click the big image popup it doesn't trigger the click event to go back to the gallery

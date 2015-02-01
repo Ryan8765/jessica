@@ -123,13 +123,18 @@ html {
 }
 
 #xout {
-	position:absolute;
-	top:.3em;
-	right:.3em;
-	width:30px;
-	height:30px;
-	border-radius:.2em;
-	background-image: url(images/x-out.png);
+	position:fixed;
+	right:0;
+	top:0;
+	width:25px;
+	height:25px;
+	background-image:url(images/xout.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:25px 25px;
+	background-color:rgba(0, 0, 0, 0.6);
+	cursor:pointer;
+	z-index:10;
 }
 
 
@@ -236,19 +241,25 @@ html {
 	position:fixed;
 	width:100%;
 	height:100%;
-	overflow:scroll;
 	top:0px;
 	left:0px;
-	background-color:rgba(0, 0, 0, 0.7);
+	background-color:black;
 	display:none;
 	text-align: center;
 }
 
 .imagePopup {
-	border: 1px solid white;
-	width:60%;
-	display:inline-block;
-	margin-top:2em;
+	position:fixed;
+	top:50%;
+	left:50%;
+	-ms-transform: translate(-50%,-50%); /* IE 9 */
+   	-webkit-transform: translate(-50%,-50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%,-50%);
+	max-width:100%;
+	max-height:100%;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 .portraitImage {
@@ -264,30 +275,40 @@ html {
 }
 
 #arrowLeft {
-	float:left;
-	margin-left:100px;
-	margin-top:0px;
+	position:fixed;
+	top:50%;
+	margin-top:-20px;
 	height:40px;
-	width:25px;
-	border:1px solid grey;
-	border-radius:3px;
-	background-image:url(images/rightarrow.jpg);
+	width:20px;
+	background-color:rgba(0, 0, 0, .5);
+	background-image:url(images/leftArrow.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:15px 30px;
+	z-index:10;
 }
 
-
-
-
+#arrowLeft:hover {
+	cursor:pointer;
+}
 
 #arrowRight {
-	float: right;
-	margin-right:100px;
-	margin-top:0px;
+	position:fixed;
+	top:50%;
+	margin-top:-20px;
+	right:0;
 	height:40px;
-	width:25px;
-	border:1px solid grey;
-	border-radius:3px;
-	background-image:url(images/rightarrow.jpg);
-	background-position:-75px 0px;
+	width:20px;
+	background-color:rgba(0, 0, 0, .5);
+	background-image:url(images/rightArrow.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:15px 30px;
+	z-index:10;
+}
+
+#arrowRight:hover {
+	cursor:pointer;
 }
 
 
@@ -297,45 +318,7 @@ html {
 *******************************/
 
 	/* Contain hover states for large devices because of iPhone hover state bug */
-@media (min-width: 769px) {
-	.imagePopup {
-		height:100vh;
-		width:auto;
-	}
-	#arrowLeft:hover {
-		background-position:-25px 0px;
-		cursor:pointer;
-		border-color:white;
-	}
 
-	#arrowLeft:active {
-		border-color: grey;
-	}
-	
-	#arrowRight:hover {
-		background-position: -50px 0px;
-		cursor:pointer;
-		border-color:white;
-	}
-
-	#arrowRight:active {
-		border-color: grey;
-	}
-
-	#xout {
-		display:none;
-	}
-
-	#xout:hover {
-		background-position: -30px 0px;
-		cursor:pointer;
-	}
-
-	#xout:active {
-		background-position: -30px 0px;
-	}
-
-}
 
 
 @media (max-width: 768px) {
@@ -343,21 +326,6 @@ html {
 	#image {
 		width:84%;
 		min-width:200px;
-	}
-
-	#arrowLeft {
-		margin-top:0;
-		margin-left:80px;
-	}
-
-	#arrowRight {
-		margin-top:0;
-		margin-right:80px;
-	}
-
-	#clickedPicture img {
-		width:99%;
-		margin-top:0;
 	}
 
 } /*end media*/
