@@ -48,28 +48,21 @@ table {
 }
 
 /*----------------------------------------------END REST------------------------------------------*/
+.item {
+	width:300px;
+	margin:8px;
+}
 
-#pictureContainer {
-	width:90%;
+.item img {
+	border:1px solid white;
+	border-radius:5px;
+}
+
+#container {
 	margin:auto;
 	padding-top:50px;
 }
-#pictureContainer ul {
-	text-align: center;
-}
 
-#pictureContainer ul li {
-	display:inline-block;
-	vertical-align: top;
-}
-
-#pictureContainer img {
-	border: 2px solid white;
-	border-radius:5px;
-	margin:15px;
-	vertical-align:top;
-	width:300px;
-}
 
 .picdisplay {
 	padding:top 20px;
@@ -98,13 +91,13 @@ footer {
 
 @media (max-width:380px) {
 
-	#pictureContainer img {
+	#container img {
 		width:98%;
 		min-width:200px;
 		margin:1em 0 1em 0;
 	}
 
-	#pictureContainer {
+	#container {
 		padding-top:1em;
 	}
 }

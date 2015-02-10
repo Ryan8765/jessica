@@ -1,0 +1,619 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"image",
+				"imageSource"
+			],
+			[
+				"ima",
+				"imageSource"
+			],
+			[
+				"app",
+				"appendHTML"
+			],
+			[
+				"html",
+				"htmlToAdd"
+			],
+			[
+				"left",
+				"leftArrowOffset"
+			],
+			[
+				"arrowle",
+				"arrowLeftDiv"
+			],
+			[
+				"cli",
+				"clickedPicImg"
+			],
+			[
+				"arrowr",
+				"arrowRightDiv"
+			],
+			[
+				"picture",
+				"pictureContainer"
+			],
+			[
+				"clickedIm",
+				"clickedImageHolderDiv"
+			],
+			[
+				"clicked",
+				"clickedPicImg"
+			],
+			[
+				"list",
+				"listLength"
+			],
+			[
+				"pic",
+				"picNumber"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"clicke",
+				"clickedimageHolderDiv"
+			],
+			[
+				"click",
+				"clickedPicImg"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"clickedpi",
+				"clickedPicImg"
+			],
+			[
+				"clic",
+				"clickedPictureDiv"
+			],
+			[
+				"clickedPi",
+				"clickedPicContents"
+			],
+			[
+				"img",
+				"imgSrc"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fade",
+				"fadeInTime"
+			],
+			[
+				"fadeout",
+				"fadeOutTime"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"perc",
+				"perCorrectUpdate"
+			],
+			[
+				"per",
+				"perCorrectUpdate"
+			],
+			[
+				"n",
+				"numberCorrect"
+			],
+			[
+				"num",
+				"numberIncorrect"
+			],
+			[
+				"number",
+				"numberCorrect"
+			],
+			[
+				"percent",
+				"percentCorrect"
+			],
+			[
+				"nu",
+				"numberCorrect"
+			],
+			[
+				"input",
+				"inputAnswer"
+			],
+			[
+				"question",
+				"questionNumber"
+			],
+			[
+				"que",
+				"questionNumber"
+			],
+			[
+				"inpu",
+				"inputAnswer"
+			],
+			[
+				"Qu",
+				"questionCorrect"
+			],
+			[
+				"qu",
+				"questionNumber"
+			],
+			[
+				"Q",
+				"questionNumber"
+			],
+			[
+				"p",
+				"percentCorrect"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"user",
+				"userGuess"
+			],
+			[
+				"guess",
+				"guessButton"
+			],
+			[
+				"ra",
+				"randNumber"
+			],
+			[
+				"ab",
+				"abPreviousGuess"
+			],
+			[
+				"list-style",
+				"list-style-position"
+			],
+			[
+				"list-sty",
+				"list-style-position"
+			],
+			[
+				"display",
+				"displayMessage"
+			],
+			[
+				"car",
+				"carRequest"
+			],
+			[
+				"lowest",
+				"lowestCostArrayPosition"
+			],
+			[
+				"sol",
+				"solutionNumber"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1610,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "main.css",
+			"settings":
+			{
+				"buffer_size": 3900,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website"
+	],
+	"file_history":
+	[
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/portrait.css",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/globalapp.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/rotatingimages.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/rotatinggallery.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/picture.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/Local Storage/blank.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/Local Storage/blankapp.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/CSS Grid Layout/gridlayout.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/CSS Grid Layout/reset.css",
+		"/C/Users/Ryan/Google Drive/Websites/Blank/blankapp.js",
+		"/C/Users/Ryan/Google Drive/Websites/Blank/blank.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/CSS Grid Layout/css.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/CSS Grid Tutorial/css/grid.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/CSS Grid Tutorial/css/normalize.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/CSS Grid Tutorial/css/style.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/CSS Grid Tutorial/index.html",
+		"/C/wamp/www/Jessica Website/ajaxcall.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/portrait.html",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/ajaxcall.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/image-location.json",
+		"/C/Users/Ryan/Desktop/Temp/ajaxtemp.html",
+		"/C/Users/Ryan/Desktop/Temp/css.css",
+		"/C/Users/Ryan/Desktop/Temp/ajaxtemp.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/contact.html",
+		"/C/Users/Ryan/Google Drive/Websites/Shopping List App/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/Shopping List App/js/main.js",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/Old/rotatingimages.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/Picture Slideshow Javascript/index.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/My Apps/Picture Slideshow Javascript/css.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/Ajax Jquery Example Finished/js/widget.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/Ajax Jquery Example Finished/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/FizzBuzz/js/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App.zip",
+		"/C/Users/Ryan/Google Drive/Websites/stackerAJAX-master/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/stackerAJAX-master/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/stackerAJAX-master/index.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/My Apps/Picture Slideshow Javascript/index.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/My Apps/Picture Slideshow Javascript/blankapp.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/AJAX_Basics_Project_Files/stage3/video7/js/widget.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/Ajax request example.js",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/AJAX XMLHttpRequest Example.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Web Design/Teatree Tutorials/AJAX_Basics_Project_Files/stage2/video5/js/widget.js",
+		"/C/Users/Ryan/Desktop/Learning Web Design/CSS3  The Missing Manual/CSS3_MM_TUTORIALS/10/styles.css",
+		"/C/Users/Ryan/Desktop/Learning Web Design/CSS3  The Missing Manual/CSS3_MM_TUTORIALS/10/banner.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/My Apps/Picture Slideshow Javascript/css.css",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/index.html",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/My Apps/Picture Slideshow Javascript/blank.html",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/css/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/js/app2.js",
+		"/C/Users/Ryan/Google Drive/Websites/git_tutorial/work/hello/hello.rb",
+		"/C/Users/Ryan/.gitconfig",
+		"/C/Users/Ryan/AppData/Roaming/Microsoft/Windows/Recent/.gitconfig.lnk",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/js/old/9-3-14.js",
+		"/C/Users/Ryan/Google Drive/Websites/FizzBuzz Refactored/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/FizzBuzz/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/Hello World Ajax/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/Hello World Ajax/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/hot-or-cold-starter-master/js/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/js/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/js/old/app_8_31_14.js",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/css/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/hot-or-cold-starter-master/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/Quiz App/css/reset.css",
+		"/C/Users/Ryan/Google Drive/Websites/Shopping List App/css/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/FizzBuzz Refactored/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/js/app.js",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/main.html",
+		"/C/Users/Ryan/Google Drive/Websites/Shopping List App/css/reset.css",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/old/main.html",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/old/main.css",
+		"/C/Users/Ryan/Google Drive/Websites/jquery-streetfighter/old/app.js",
+		"/C/Users/Ryan/Desktop/Javascript/doublefunctiontest.html",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter10/plane.html",
+		"/C/Users/Ryan/Desktop/Javascript/eventHandlerTest.html",
+		"/C/Users/Ryan/Desktop/Javascript/mainBattleship.html",
+		"/C/Users/Ryan/Desktop/Javascript/mainBattleship.js",
+		"/C/Users/Ryan/Desktop/Javascript/mainBattleship.css",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter8/battleship_tester.html",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter8/battleship_tester.js",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter8/battleship.html",
+		"/C/Users/Ryan/Desktop/Javascript/prequal.html",
+		"/C/Users/Ryan/Desktop/Javascript/typeoftest.html",
+		"/C/Users/Ryan/Desktop/Javascript/prequal.js",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter5/carWithFuel.html",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter5/carWithDrive.html",
+		"/C/Users/Ryan/Desktop/Javascript/bubble.html",
+		"/C/Users/Ryan/Desktop/Javascript/bubble.js",
+		"/C/Users/Ryan/Desktop/Javascript/behavior.html",
+		"/C/Users/Ryan/Desktop/Javascript/battleship.html",
+		"/C/Users/Ryan/Desktop/Javascript/Head-First-JavaScript-Programming-master/chapter2/battleship.js",
+		"/C/Users/Ryan/Desktop/Javascript/battleship.js",
+		"/C/Users/Ryan/Desktop/jquerytest.html",
+		"/C/Users/Ryan/Google Drive/Websites/Jessica Website/picture3.html",
+		"/C/Users/Ryan/Desktop/Google Website/test.css",
+		"/C/Users/Ryan/Desktop/Google Website/test.html",
+		"/C/Users/Ryan/Desktop/Google Website/index.html",
+		"/C/Users/Ryan/Desktop/Jessica Website/index.html",
+		"/C/Users/Ryan/Desktop/Jessica Website/main.css",
+		"/C/Users/Ryan/Desktop/Google Website/main.css",
+		"/C/Users/Ryan/Desktop/Ryan Drive-Laptop/Website/Jessica Website/css/homepage.css",
+		"/C/Users/Ryan/Desktop/centerdivindiv.txt",
+		"/C/Users/Ryan/Google Drive/Websites/Resume-HTML/index.html",
+		"/C/Users/Ryan/Google Drive/Websites/Resume-HTML/resume.css",
+		"/C/Users/Ryan/Desktop/Test.css",
+		"/C/Users/Ryan/Desktop/Test.html",
+		"/C/Users/Ryan/Desktop/Resume-HTML/index.html",
+		"/C/Users/Ryan/Desktop/Learning Web Design/My Files 1/Bistro/index.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"picnumber",
+			"pointer",
+			"background",
+			"image",
+			";\n",
+			"index",
+			"cursor",
+			"tags",
+			"results",
+			"tags",
+			"stack-image",
+			"stack-icon",
+			"math",
+			"map",
+			"newanswers",
+			"option",
+			"input",
+			"inputquestion",
+			"stop",
+			"prevent",
+			"stop",
+			"img",
+			"background",
+			"alert",
+			"enter",
+			"45px",
+			"button",
+			"border",
+			"center",
+			"signin",
+			"form",
+			"button",
+			"google search",
+			"red"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

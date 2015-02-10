@@ -39,10 +39,22 @@ $(document).ready(function() {
 		return newSource;
 	};
 
+	//masonry
+	$(window).load(function(){
+		//add masonry for pictures
+		var $container = $('#container');
+		// initialize
+		$container.masonry({
+  			columnWidth: 0,
+  			itemSelector: '.item',
+  			isFitWidth: true
+		});
+	});
+	
 
 
-	$('#pictureContainer').on('click','img',function() {
-		$('#pictureContainer').hide();
+	$('#container').on('click','img',function() {
+		$('#container').hide();
 		//create div for clickedPicture
 		var imgSrc = $(this).attr('src');
 		imgSrc = thumbnailSplice(imgSrc);
@@ -66,8 +78,8 @@ $(document).ready(function() {
 		var popupImg = clickedPicImg.attr('src');
 		popupImg = thumbnailSplice(popupImg);
 		//find index position of li with popup picture src to know which picture to pop up next.
-		var listLength = ($('#pictureContainer li').length)-1;
-		$('#pictureContainer li img').each(function(){
+		var listLength = ($('#container div').length)-1;
+		$('#container div img').each(function(){
 			var thisSource = $(this).attr('src');
 			thisSource = thumbnailSplice(thisSource);
 			if(thisSource == popupImg) {
@@ -77,7 +89,7 @@ $(document).ready(function() {
 		var pictureSrc;
 		if(picNumber > 0 || picNumber < listLength - 1) {
 			picNumber = picNumber - 1;
-			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#container div').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		} else if (picNumber == 0) {
 			picNumber = listLength;
@@ -92,9 +104,9 @@ $(document).ready(function() {
 		var popupImg = clickedPicImg.attr('src');
 		popupImg = thumbnailSplice(popupImg);
 		//find index position of li with popup picture src to know which picture to pop up next.
-		var listLength = ($('#pictureContainer li').length)-1;
+		var listLength = ($('#container div').length)-1;
 		//get current index of img showing
-		$('#pictureContainer li img').each(function(){
+		$('#container div img').each(function(){
 			var thisSource = $(this).attr('src');
 			thisSource = thumbnailSplice(thisSource);
 			if(thisSource == popupImg) {
@@ -104,11 +116,11 @@ $(document).ready(function() {
 		var pictureSrc;
 		if(picNumber < listLength) {
 			picNumber = picNumber + 1;
-			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#container div').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		} else {
 			picNumber = 0;
-			pictureSrc = $('#pictureContainer li').eq(picNumber).children().attr('src');
+			pictureSrc = $('#container div').eq(picNumber).children().attr('src');
 			$('#clickedPicture img').attr('src',thumbnailSplice(pictureSrc));
 		}
 	});
@@ -116,13 +128,13 @@ $(document).ready(function() {
 	//hides the popup gallery picture
 	clickedPictureDiv.on('click', function(){
 		$(this).hide();
-		$('#pictureContainer').show();
+		$('#container').show();
 	});
 
 	//touchstart added for IOS safari 'click' bug.  
 	xout.on('click touchstart', function(){
 		clickedPictureDiv.hide();
-		$('#pictureContainer').show();
+		$('#container').show();
 	});
 
 	//hide menu paragraph when menu is clicked for small media.  Also shows navbar.
