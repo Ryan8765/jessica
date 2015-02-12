@@ -33,6 +33,12 @@ $(document).ready(function() {
 		}
 	};
 
+	var masonryUpdate = function() {
+    	setTimeout(function() {
+        	$('#container').masonry();
+    	}, 150);
+	}
+
 	//function to splice "thumbnail" out of image source to show High Def picture
 	var thumbnailSplice = function(string) {
 		var newSource = string.replace("Thumbnails/", "");
@@ -59,13 +65,12 @@ $(document).ready(function() {
 		var imgSrc = $(this).attr('src');
 		imgSrc = thumbnailSplice(imgSrc);
 		clickedPicImg.attr('src', imgSrc);
-		$('body').append(clickedPictureDiv);
-		clickedPicImg.hide();
-		$('#clickedPicture').show();
-		clickedPicImg.show();
-		$('html,body').scrollTop(0);
-
-		var x = window.innerWidth;
+		//make sure image loaded before showing div
+		imagesLoaded(clickedPicImg,function(){
+			$('body').append(clickedPictureDiv);
+			clickedPictureDiv.show();
+			$('html,body').scrollTop(0);
+		});
 	});
 
 	//stop image propagation so that when you click the big image popup it doesn't trigger the click event to go back to the gallery
@@ -129,12 +134,16 @@ $(document).ready(function() {
 	clickedPictureDiv.on('click', function(){
 		$(this).hide();
 		$('#container').show();
+		//get masonry to load correctly after exiting main image
+		masonryUpdate(); 
 	});
 
 	//touchstart added for IOS safari 'click' bug.  
 	xout.on('click touchstart', function(){
 		clickedPictureDiv.hide();
 		$('#container').show();
+		//get masonry to load correctly after exiting main image
+		masonryUpdate(); 
 	});
 
 	//hide menu paragraph when menu is clicked for small media.  Also shows navbar.
@@ -152,6 +161,8 @@ $(document).ready(function() {
 			$('#navbar').hide();
 			$('#menuIcon p').show();
 		}
+		masonryUpdate();
+		$('html,body').scrollTop(0);
 	});
 
 }); //end doc ready

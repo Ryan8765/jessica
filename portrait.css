@@ -48,10 +48,13 @@ table {
 }
 
 /*----------------------------------------------END REST------------------------------------------*/
+
+
 .item {
 	width:300px;
 	margin:8px;
 }
+
 
 .item img {
 	border:1px solid white;
